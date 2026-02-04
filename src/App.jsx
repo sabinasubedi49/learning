@@ -6,7 +6,7 @@ import './App.css'
 const containerVariants = {
   initial: { opacity: 0, scale: 0.95, y: 20 },
   animate: { opacity: 1, scale: 1, y: 0 },
-  exit: { opacity: 0, scale: 1.05, y: -20 }
+  exit: { opacity: 0 }
 };
 
 const EntryScene = ({ setCurrentLevel, sparkles }) => (
@@ -88,7 +88,7 @@ const QuestionLevel = ({ handleYesClick, handleNoButtonHover, handleNoButtonClic
         onMouseEnter={handleNoButtonHover}
         onClick={handleNoButtonClick}
         animate={{ x: noButtonPosition.x, y: noButtonPosition.y }}
-        transition={{ type: "spring", stiffness: 150, damping: 15 }}
+        transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         NO 🙈
       </motion.button>
@@ -137,6 +137,7 @@ const RewardsLevel = ({ setCurrentLevel }) => (
         Your smile lights up my world.<br /><br />
         Thank you for being amazing!<br /><br />
         Forever yours, 💕
+      </p>
     </div>
 
     <div className="polaroid-container">
