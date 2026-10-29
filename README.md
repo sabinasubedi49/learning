@@ -1,8 +1,8 @@
-# A Fun Valentine's Day Surprise!
+# Just Because
 
-This is a little interactive web page I built for fun to send as a virtual Valentine's card.
+A small interactive note with a question, a thoughtful reply, and a just-because gift.
 
-It features a few simple screens, some fun animations, and a "will you be my valentine?" question.
+Both answers are welcome, and a new tiny note appears whenever the gift button is tapped.
 
 ## How to use it
 
